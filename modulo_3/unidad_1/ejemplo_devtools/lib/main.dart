@@ -38,18 +38,17 @@ class _AppLentaState extends State<AppLenta> {
         children: [
           Text('Contador: $contador'),
           Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                children: List.generate(1000, (index) {
-                  print('Render item $index');
-                  return Container(
-                    margin: const EdgeInsets.all(5),
-                    padding: const EdgeInsets.all(10),
-                    child: Text('Item $index'),
-                  );
-                }),
-              ),
-            ),
+            child: ListView.builder(
+              itemCount: 1000,
+              itemBuilder: (context, index) {
+                return RepaintBoundary(
+                  child: ItemWidget(
+                    key: ValueKey(index),
+                    index: index,
+                  ),
+                );
+              },
+            )
           ),
         ],
       ),
@@ -61,5 +60,29 @@ class _AppLentaState extends State<AppLenta> {
         },
       ),
     );
+  }
+}
+
+class ItemWidget extends StatelessWidget {
+  final int index;
+
+  const ItemWidget({super.key, required this.index});
+
+  @override
+  Widget build(BuildContext context) {
+    print('render item $index');
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+      padding: const EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+        color: Colors.green.shade100,
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      child: Text(
+        'Item $index',
+        style: const TextStyle(fontSize: 16.0),
+      ),
+    );
+    
   }
 }
