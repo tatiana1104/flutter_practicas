@@ -1,62 +1,57 @@
 # Blog App
 
-## Descripción
-Blog App es una aplicación Flutter que consume una API para mostrar:
-- Lista de publicaciones
-- Detalles de cada publicación
-- Comentarios asociados
-- Información del autor
+![Flutter](https://img.shields.io/badge/Flutter-3.9.x-blue?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.9.x-blue?style=for-the-badge&logo=dart&logoColor=white)
+![API](https://img.shields.io/badge/REST-JSON-brightgreen?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Desarrollo-orange?style=for-the-badge)
 
-## Características
-1. **Lista de publicaciones**:
-   - Título
-   - Parte del cuerpo
-   - ID del usuario
-2. **Detalles del post**:
-   - Título completo
-   - Cuerpo
-   - Botón para ver comentarios
-   - Información del autor
-3. **Comentarios**:
-   - Nombre
-   - Email
-   - Contenido del comentario
-4. **Perfil del usuario**:
-   - Nombre
-   - Nombre de usuario
-   - Email
-   - Teléfono
-   - Empresa
-   - Dirección
+## 📋 Descripción
 
-## Endpoints utilizados
-- `/posts`
-- `/posts/{id}`
-- `/posts/{id}/comments`
-- `/users/{id}`
+Blog App es una aplicación Flutter que consume una API REST para mostrar publicaciones, detalles de posts, comentarios e información de usuarios.
 
-## Instalación
-1. Clona este repositorio:
+## ✨ Características principales
+
+- 📄 **Listado de publicaciones** con título, vista previa de contenido y autor.
+- 🔍 **Detalle del post** con cuerpo completo y acceso a comentarios.
+- 💬 **Comentarios asociados** por cada publicación.
+- 👤 **Perfil de usuario** con datos de contacto y empresa.
+
+## 🌐 Endpoints utilizados
+
+- `GET /posts`
+- `GET /posts/{id}`
+- `GET /posts/{id}/comments`
+- `GET /users/{id}`
+
+## 🛠️ Dependencias y por qué se usan
+
+- `http`: biblioteca oficial para realizar solicitudes HTTP y obtener datos JSON desde la API.
+- `flutter`: framework principal para construir la app.
+- `cupertino_icons`: íconos estándar para la interfaz.
+
+## 🚀 Instalación
+
+1. Clona el repositorio:
    ```bash
    git clone <URL_DEL_REPOSITORIO>
    ```
 2. Navega al directorio del proyecto:
    ```bash
-   cd blog_app
+   cd modulo_2_unidad_1/blog_app
    ```
 3. Instala las dependencias:
    ```bash
    flutter pub get
    ```
 
-## Ejecución
-1. Ejecuta la aplicación:
-   ```bash
-   flutter run
-   ```
-2. Selecciona un dispositivo o emulador para probar la aplicación.
+## ▶️ Ejecución
 
-## Estructura del proyecto
+```bash
+flutter run
+```
+
+## 📁 Estructura del proyecto
+
 ```
 lib/
  ├── models/
@@ -73,8 +68,9 @@ lib/
  └── main.dart
 ```
 
-## Dependencias
-- `http`: Para realizar solicitudes HTTP.
+## 🎯 Objetivo
 
-## Autor
-Desarrollado por J. Tatiana Vargas.
+Aprender a integrar APIs REST en Flutter y presentar datos remotos en una experiencia de usuario estructurada.
+
+## 👤 Autor
+Desarrollado por Juddy Tatiana Vargas.
