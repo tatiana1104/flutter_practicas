@@ -1,106 +1,70 @@
 # 🛍️ API REST Flutter App
 
-Este proyecto es una aplicación Flutter diseñada para interactuar con la [Fake Store API](https://fakestoreapi.com). Permite a los usuarios visualizar y gestionar productos de manera eficiente, con una interfaz moderna y fácil de usar.
+![Flutter](https://img.shields.io/badge/Flutter-3.9.x-blue?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.9.x-blue?style=for-the-badge&logo=dart&logoColor=white)
+![API](https://img.shields.io/badge/REST-JSON-brightgreen?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Lista%20de%20API-yellow?style=for-the-badge)
 
----
+## 📋 Descripción
 
-## ✨ Características Principales
+Este proyecto es una aplicación Flutter diseñada para consumir la [Fake Store API](https://fakestoreapi.com). Permite visualizar productos remotos, crear nuevos productos y presentar datos obtenidos desde una API REST.
 
-- 📋 **Listado de Productos**: Obtén una lista completa de productos desde la API.
-- ➕ **Creación de Productos**: Agrega nuevos productos directamente desde la aplicación.
-- 🎨 **Interfaz Intuitiva**: Diseñada para ofrecer una experiencia de usuario fluida y agradable.
+## ✨ Características principales
 
----
+- 📋 **Listado de productos** consumidos desde un servicio externo.
+- ➕ **Creación de productos** remotos con envío de datos JSON.
+- 📱 **UI simple y funcional** orientada a datos de API.
+- 🔁 **Parseo de JSON** y presentación en pantalla.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Por qué usar las dependencias principales
 
-Este proyecto fue desarrollado utilizando las siguientes tecnologías:
+- `http`: biblioteca oficial de Dart para realizar solicitudes HTTP a APIs REST.
+- `cupertino_icons`: conjunto de iconos para compatibilidad visual en Cupertino/Material.
 
-- **Dart**: Lenguaje de programación principal utilizado para desarrollar la aplicación Flutter.
-- **Flutter**: Framework para construir interfaces de usuario nativas y multiplataforma.
-- **Fake Store API**: API REST utilizada para gestionar los datos de productos.
+## 🌐 API utilizada
 
----
+Endpoints principales:
 
-## ⚙️ Requisitos Previos
+- **GET** `/products`: recupera el listado de productos.
+- **POST** `/products`: crea un nuevo producto.
 
-Antes de comenzar, asegúrate de tener lo siguiente instalado:
+Base URL: `https://fakestoreapi.com`
 
-- [Flutter SDK](https://docs.flutter.dev/get-started/install)
-- Un editor de código como [Visual Studio Code](https://code.visualstudio.com/) o [Android Studio](https://developer.android.com/studio)
+## ⚙️ Requisitos previos
+
+- Flutter SDK 3.9.x o superior
+- Dart SDK 3.9.x o superior
 - Conexión a Internet
+- Dispositivo o emulador Android/iOS
 
----
+## 🚀 Instalación y ejecución
 
-## 🚀 Instalación y Configuración
+1. Accede al proyecto:
 
-Sigue estos pasos para configurar el proyecto en tu máquina local:
+```bash
+cd modulo_2_unidad_1/apirest
+```
 
-1. **Clona el repositorio**:
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   ```
+2. Instala las dependencias:
 
-2. **Navega al directorio del proyecto**:
-   ```bash
-   cd apirest
-   ```
+```bash
+flutter pub get
+```
 
-3. **Instala las dependencias necesarias**:
-   ```bash
-   flutter pub get
-   ```
+3. Ejecuta la aplicación:
 
-4. **Ejecuta la aplicación**:
-   Conecta un dispositivo físico o inicia un emulador, luego ejecuta:
-   ```bash
-   flutter run
-   ```
+```bash
+flutter run
+```
 
----
+## 📂 Estructura del proyecto
 
-## 🗂️ Estructura del Proyecto
+- `lib/`: código de la aplicación.
+  - `models/`: modelos de datos como `Product`.
+  - `services/`: lógica de consumo de la API.
+  - `screens/`: pantallas principales.
+- `pubspec.yaml`: configuración de dependencias.
 
-El proyecto está organizado de la siguiente manera:
+## 📄 Licencia
 
-- **`lib/`**: Contiene todo el código fuente de la aplicación.
-  - **`models/`**: Define las estructuras de datos, como el modelo `Product`.
-  - **`services/`**: Implementa la lógica para interactuar con la API (`ApiService`).
-  - **`screens/`**: Contiene las pantallas principales de la aplicación (`HomeScreen`, `CreateProductScreen`).
-
----
-
-## 🌐 API Utilizada
-
-Esta aplicación utiliza la [Fake Store API](https://fakestoreapi.com) para gestionar productos. Los endpoints principales son:
-
-- **GET** `/products`: Recupera la lista de productos.
-- **POST** `/products`: Crea un nuevo producto.
-
-**URL Base de la API**: [https://fakestoreapi.com](https://fakestoreapi.com)
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-Este proyecto fue desarrollado utilizando las siguientes tecnologías:
-
-- **Dart**: Lenguaje de programación principal utilizado para desarrollar la aplicación Flutter.
-- **Flutter**: Framework para construir interfaces de usuario nativas y multiplataforma.
-- **Fake Store API**: API REST utilizada para gestionar los datos de productos.
-
----
-
-## 📜 Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
----
-
-## 📧 Contacto
-
-Si tienes preguntas o sugerencias, no dudes en contactarnos:
-
-- **Autor**: [Juddy Tatiana Vargas Santofimio](https://github.com/tuusuario)
-
-- **Correo Electrónico**: tuemail@ejemplo.com
+Proyecto creado para práctica de integración de APIs en Flutter.
