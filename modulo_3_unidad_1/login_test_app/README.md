@@ -1,17 +1,34 @@
-# login_test_app
+# Login Test App
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev) [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev) [![Testing](https://img.shields.io/badge/Testing-Login%20Flow-blue?style=for-the-badge)](#)
 
-## Getting Started
+## Descripción
 
-This project is a starting point for a Flutter application.
+Proyecto de pruebas centrado en el flujo de inicio de sesión. Incluye validaciones de formulario, manejo de estados y pruebas automatizadas para garantizar el correcto comportamiento del login.
 
-A few resources to get you started if this is your first Flutter project:
+## Características
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Formulario de inicio de sesión.
+- Validación de campos email y contraseña.
+- Manejo de estados de error.
+- Base para pruebas unitarias y de integración.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Objetivo
+
+- Crear un flujo de login profesional en Flutter.
+- Validar interacciones de usuario.
+- Preparar la aplicación para pruebas automatizadas.
+
+## Cómo ejecutar
+
+```bash
+cd modulo_3_unidad_1/login_test_app
+flutter pub get
+flutter run
+```
+
+## Estructura principal
+
+- `lib/`: lógica del login y UI.
+- `test/`: pruebas de comportamiento.
+- `pubspec.yaml`: dependencias.
