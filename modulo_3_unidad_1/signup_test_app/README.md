@@ -1,17 +1,34 @@
-# signup_test_app
+# Signup Test App
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev) [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev) [![Testing](https://img.shields.io/badge/Testing-Auth%20Flow-blue?style=for-the-badge)](#)
 
-## Getting Started
+## Descripción
 
-This project is a starting point for a Flutter application.
+Proyecto de prueba para el flujo de registro de usuario en Flutter. Su foco es verificar validaciones, estados de formulario y navegación durante el proceso de registro.
 
-A few resources to get you started if this is your first Flutter project:
+## Características
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Formulario de registro con validaciones.
+- Manejo de estados de carga y errores.
+- Diseño enfocado en usabilidad.
+- Base de pruebas para flujos de autenticación.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Objetivo
+
+- Validar la experiencia de registro de usuario.
+- Mejorar la confiabilidad del formulario con pruebas.
+- Construir un flujo de onboarding claro y profesional.
+
+## Cómo ejecutar
+
+```bash
+cd modulo_3_unidad_1/signup_test_app
+flutter pub get
+flutter run
+```
+
+## Estructura del proyecto
+
+- `lib/`: código principal.
+- `test/`: pruebas de la app.
+- `pubspec.yaml`: dependencias.
