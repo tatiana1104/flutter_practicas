@@ -1,86 +1,82 @@
 # 📱 app_productos
 
-> Aplicación Flutter para gestión de productos con autenticación 🔐
+![Flutter](https://img.shields.io/badge/Flutter-3.9.x-blue?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.9.x-blue?style=for-the-badge&logo=dart&logoColor=white)
+![Estado](https://img.shields.io/badge/Estado-Desarrollo-orange?style=for-the-badge)
+![Licencia](https://img.shields.io/badge/Licencia-Privada-lightgrey?style=for-the-badge)
+
+> Aplicación Flutter para la gestión de productos con autenticación y conexión a API REST.
 
 ## 📖 Descripción
 
-Esta es una aplicación móvil desarrollada en Flutter para la gestión de productos. Permite a los usuarios autenticarse mediante registro e inicio de sesión, y gestionar una lista de productos (crear, leer, actualizar y eliminar).
+`app_productos` es una app de práctica en Flutter que permite a los usuarios registrarse, iniciar sesión y gestionar productos mediante un backend REST. Incluye operaciones CRUD, manejo de sesión y una interfaz basada en Material Design.
 
-## ✨ Características
+## ✨ Funcionalidades principales
 
-- 🔐 **Autenticación de usuarios**: Registro e inicio de sesión con JWT
-- 📦 **Gestión de productos**: CRUD completo (Crear, Leer, Actualizar, Eliminar)
-- 🎨 **Interfaz moderna**: Diseño Material Design 3
-- 🌐 **Conexión API REST**: Integración con backend externo
+- 🔐 **Autenticación**: Registro e inicio de sesión de usuarios.
+- 📦 **CRUD de productos**: Crear, listar, editar y eliminar productos.
+- 🌐 **API REST**: Comunicación con un backend externo.
+- 🎨 **UI moderna**: Diseño responsivo y agradable.
 
-## 📁 Estructura del proyecto
-
-```
-lib/
-├── main.dart              # 📌 Punto de entrada de la aplicación
-├── models/
-│   ├── user.dart          # 👤 Modelo de usuario
-│   └── product.dart       # 📦 Modelo de producto
-├── screens/
-│   ├── login_screen.dart  # 🔑 Pantalla de inicio de sesión
-│   └── register_screen.dart # 📝 Pantalla de registro
-├── services/
-│   └── api_services.dart  # 🌐 Servicio de conexión a la API
-└── widgets/
-    └── (widgets adicionales) # 🧩 Componentes UI
-```
-
-## 🔌 API Endpoints
-
-La aplicación se conecta a la API en `https://api.fgoga.com`:
+## 🔌 Endpoints usados
 
 | Método | Endpoint | Descripción |
 |--------|----------|-------------|
-| ➕ POST | `/api/register` | Registrar nuevo usuario |
-| 🔓 POST | `/api/login` | Iniciar sesión |
-| 📋 GET | `/api/products` | Listar productos |
-| ➕ POST | `/api/products` | Crear producto |
-| 🔍 GET | `/api/products/{id}` | Obtener producto |
-| ✏️ PUT | `/api/products/{id}` | Actualizar producto |
-| 🗑️ DELETE | `/api/products/{id}` | Eliminar producto |
+| POST | `/api/register` | Registrar usuario |
+| POST | `/api/login` | Autenticar usuario |
+| GET | `/api/products` | Listar productos |
+| POST | `/api/products` | Crear producto |
+| GET | `/api/products/{id}` | Ver detalle |
+| PUT | `/api/products/{id}` | Actualizar producto |
+| DELETE | `/api/products/{id}` | Eliminar producto |
 
-## 🛠️ Requisitos
+## 🛠️ Dependencias y por qué se utilizan
 
-- Flutter SDK 3.x
-- Dependencias:
-  - `http` - Para peticiones HTTP
-  - `provider` - Gestión de estado
-  - `shared_preferences` - Almacenamiento local
+- `http`: cliente HTTP para consumir la API REST.
+- `provider`: manejo de estado para sesión y lista de productos.
+- `shared_preferences`: almacenamiento local para token o preferencias.
+- `cupertino_icons`: iconos estándar para Flutter.
 
-## 📥 Instalación
+## 📂 Estructura del proyecto
 
-1. 📥 Clonar el repositorio
-2. 📦 Ejecutar `flutter pub get` para instalar dependencias
-3. ▶️ Ejecutar `flutter run` para iniciar la aplicación
+```
+lib/
+├── main.dart
+├── models/
+│   ├── user.dart
+│   └── product.dart
+├── screens/
+│   ├── login_screen.dart
+│   └── register_screen.dart
+├── services/
+│   └── api_services.dart
+└── widgets/
+    └── ...
+```
+
+## 🚀 Instalación
+
+1. Abre una terminal en `modulo_2_unidad_1/app_productos`
+2. Ejecuta:
+
+```bash
+flutter pub get
+flutter run
+```
 
 ## 💡 Uso
 
-1. **📝 Registro**: El usuario se registra con nombre, email y contraseña
-2. **🔑 Login**: Inicia sesión con email y contraseña
-3. **📦 Productos**: Puede crear, ver, editar y eliminar productos
+1. Registra un nuevo usuario.
+2. Inicia sesión con email y contraseña.
+3. Navega al listado de productos.
+4. Crea, edita o elimina productos según sea necesario.
 
-## 🚀 Getting Started
+## 🎯 Objetivo
 
-Este proyecto es un punto de partida para una aplicación Flutter.
-
-Recursos para comenzar:
-
-- 📚 [Lab: Escribe tu primera app Flutter](https://docs.flutter.dev/get-started/codelab)
-- 🍳 [Cookbook: Ejemplos útiles de Flutter](https://docs.flutter.dev/cookbook)
-
-Para ayuda con el desarrollo Flutter, consulta la
-[documentación online](https://docs.flutter.dev/), que ofrece tutoriales,
-muestras, guía para desarrollo móvil y referencia completa de API.
+Este proyecto está diseñado para aprender a integrar una API REST con Flutter, practicar autenticación y aplicar un flujo completo de gestión de datos.
 
 ---
 
-⭐️ Hecho con Flutter
-
-
-email: juddy@example.com
-pass: 12345678
+**Notas:**
+- Asegúrate de que el backend `https://api.fgoga.com` esté disponible.
+- Puedes extender la app con filtros, búsqueda o carga de imágenes de productos.
