@@ -1,56 +1,41 @@
 # primera_app
 
-Una aplicación Flutter básica creada como parte del módulo 1 de Flutter Prácticas.
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev) [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 
 ## Descripción
 
-Esta es la primera aplicación desarrollada en el curso de Flutter de Dev Senior Code. Es un proyecto inicial que demuestra los conceptos básicos de Flutter, incluyendo:
+Proyecto inicial de Flutter para aprender los fundamentos de la plataforma y la estructura de una app.
 
-- Uso de `StatelessWidget`
-- Configuración de `MaterialApp`
-- Implementación de `Scaffold` con AppBar
-- Uso de widgets básicos como Text, Center, FloatingActionButton
-- Personalización de colores y estilos
+### Contenido
 
-## Características
+- Configuración de `MaterialApp` y `Scaffold`.
+- Uso básico de widgets: `Text`, `Center`, `FloatingActionButton`.
+- Personalización de temas y colores.
+- Primera experiencia con la interfaz de usuario y el ciclo de vida de Flutter.
 
-- **AppBar personalizado**: Barra superior con título "Mi primera aplicación" en color negro
-- **Texto central**: Muestra "Dev Senior Code" en el centro de la pantalla
-- **Botón flotante**: Un FloatingActionButton con icono de agregar
-- **Diseño limpio**: Interfaz simple y funcional
+## Características principales
 
-## Cómo comenzar
+- Pantalla única con contenido central.
+- AppBar con título.
+- Botón flotante funcional.
+- Estructura de proyecto limpia y lista para extender.
 
-Este proyecto es un punto de partida para una aplicación Flutter.
+## Cómo ejecutar
 
-Recursos recomendados para aprender más:
-
-- [Lab: Escribe tu primera aplicación Flutter](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Ejemplos útiles de Flutter](https://docs.flutter.dev/cookbook)
-
-Para obtener ayuda con el desarrollo en Flutter, consulta la
-[documentación en línea](https://docs.flutter.dev/), que ofrece tutoriales,
-ejemplos, orientación sobre desarrollo móvil y una referencia completa de la API.
-
-## Ejecutar la aplicación
-
-Para ejecutar esta aplicación en un dispositivo o emulador:
-
-1. Asegúrate de tener Flutter instalado
-2. Clona este repositorio
-3. Ejecuta el siguiente comando en la terminal:
-
-```
-flutter run
-```
+1. Abre la carpeta `modulo_1_unidad_1/primera_app`
+2. Ejecuta `flutter pub get`
+3. Ejecuta `flutter run`
 
 ## Estructura del proyecto
 
-```
-lib/
-  main.dart       # Archivo principal con el código de la aplicación
-```
+- `lib/main.dart`: punto de entrada de la aplicación.
+- `pubspec.yaml`: configuración de dependencias.
 
-## Autor
+## Buenas prácticas
 
-Desarrollado como parte del curso de Dev Senior Code.
+- Uso de widgets básicos y composición de UI.
+- Proyecto organizado para aprender la configuración inicial de Flutter.
+
+## Notas
+
+Este proyecto es una base excelente para añadir más funcionalidades y avanzar hacia aplicaciones más complejas.
